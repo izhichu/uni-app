@@ -3,14 +3,170 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "e书网",
+				"enablePullDownRefresh":true,
+				"Component":true,
+				"onReachBottomDistance":1000
+			}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {}
+		}, {
+			"path": "pages/bookshop/bookshop",
+			"style": {
+				"navigationBarTitleText": "书店频道"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/allCategories/allCategories",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/newBook/newBook",
+		    "style" : {}
+		}
+		,{
+			"path": "pages/booklist/booklist",
+			"style": {
+				"navigationBarTitleText": "书单"
+			}
+		}
+		,{
+            "path" : "pages/List/List",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/bookDetail/bookDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+		,
+		
+		{
+			"path": "pages/shop/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"component": true,
+				"usingComponents": {
+					"van-tabbar": "/wxcomponents/vant/dist/tabbar/index",
+					"van-tabbar-item": "/wxcomponents/vant/dist/tabbar-item/index",
+					"van-icon": "/wxcomponents/vant/dist/icon/index",
+					"van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index",
+					"van-dialog": "/wxcomponents/vant/dist/dialog/index",
+					"van-tab": "/wxcomponents/vant/dist/tab/index",
+					"van-tabs": "/wxcomponents/vant/dist/tabs/index",
+					"van-sticky": "/wxcomponents/vant/dist/sticky/index",
+					"van-toast": "/wxcomponents/vant/dist/toast/index",
+					"van-loading": "/wxcomponents/vant/dist/loading/index",
+					"van-circle": "/wxcomponents/vant/dist/circle/index"
+				}
+			}
+		},
+		{
+			"path": "pages/shop/search/search",
+			"style": {
+				"navigationBarTitleText": "本店搜索",
+				"enablePullDownRefresh": true,
+				"component": true,
+				"usingComponents": {
+					"van-search": "/wxcomponents/vant/dist/search/index",
+					"van-sticky": "/wxcomponents/vant/dist/sticky/index",
+					"van-loading": "/wxcomponents/vant/dist/loading/index",
+					"van-circle": "/wxcomponents/vant/dist/circle/index"
+				}
+			}
+		}, {
+			"path": "pages/shop/sort/sort",
+			"style": {
+				"navigationBarTitleText": "店铺分类",
+				"component": true,
+				"usingComponents": {
+					
+				}
+			}
+		}, {
+			"path": "pages/shop/chat/chat",
+			"style": {
+				"navigationBarTitleText": "敬请期待",
+				"component": true,
+				"usingComponents": {
+					"van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index"
+				}
+			}
+		}, {
+			"path": "pages/shop/news/news",
+			"style": {}
+		}, {
+			"path": "pages/shop/shopdetail/shopdetail",
+			"style": {
+				"component": true,
+				"usingComponents": {
+					"van-icon": "/wxcomponents/vant/dist/icon/index"
+				}
+			}
+		}
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "e书网",
+		"navigationBarBackgroundColor": "#b41d13",
+		"backgroundColor": "#b41d13",
+		"usingComponents": {
+			"van-tab": "/wxcomponents/vant/dist/tab/index",
+			"van-tabs": "/wxcomponents/vant/dist/tabs/index",
+			"van-card": "/wxcomponents/vant/dist/card/index",
+			"van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
+			"van-submit-bar": "/wxcomponents/vant/dist/submit-bar/index",
+			"van-stepper": "/wxcomponents/vant/dist/stepper/index",
+			"van-swipe-cell": "/wxcomponents/vant/dist/swipe-cell/index"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#DC143C",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-active.png"
+			},
+			{
+				"pagePath": "pages/bookshop/bookshop",
+				"text": "书店",
+				"iconPath": "static/icon/bookshop.png",
+				"selectedIconPath": "static/icon/bookshop-active.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart-active.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/icon/mine.png",
+				"selectedIconPath": "static/icon/mine-active.png"
+			}
+		]
 	}
 }
